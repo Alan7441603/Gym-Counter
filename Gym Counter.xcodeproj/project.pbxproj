@@ -11,6 +11,8 @@
 		EAA4A89E2B20CBE900CBD04D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA4A89D2B20CBE900CBD04D /* ContentView.swift */; };
 		EAA4A8A02B20CBEA00CBD04D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAA4A89F2B20CBEA00CBD04D /* Assets.xcassets */; };
 		EAA4A8A32B20CBEA00CBD04D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAA4A8A22B20CBEA00CBD04D /* Preview Assets.xcassets */; };
+		EAA4A8AA2B20D19700CBD04D /* SetCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA4A8A92B20D19700CBD04D /* SetCounter.swift */; };
+		EAA4A8AC2B20D1CB00CBD04D /* StopWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA4A8AB2B20D1CB00CBD04D /* StopWatch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		EAA4A89D2B20CBE900CBD04D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EAA4A89F2B20CBEA00CBD04D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAA4A8A22B20CBEA00CBD04D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EAA4A8A92B20D19700CBD04D /* SetCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCounter.swift; sourceTree = "<group>"; };
+		EAA4A8AB2B20D1CB00CBD04D /* StopWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				EAA4A89B2B20CBE900CBD04D /* Gym_CounterApp.swift */,
 				EAA4A89D2B20CBE900CBD04D /* ContentView.swift */,
+				EAA4A8A92B20D19700CBD04D /* SetCounter.swift */,
+				EAA4A8AB2B20D1CB00CBD04D /* StopWatch.swift */,
 				EAA4A89F2B20CBEA00CBD04D /* Assets.xcassets */,
 				EAA4A8A12B20CBEA00CBD04D /* Preview Content */,
 			);
@@ -139,6 +145,8 @@
 			files = (
 				EAA4A89E2B20CBE900CBD04D /* ContentView.swift in Sources */,
 				EAA4A89C2B20CBE900CBD04D /* Gym_CounterApp.swift in Sources */,
+				EAA4A8AA2B20D19700CBD04D /* SetCounter.swift in Sources */,
+				EAA4A8AC2B20D1CB00CBD04D /* StopWatch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
