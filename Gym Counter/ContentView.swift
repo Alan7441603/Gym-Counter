@@ -19,16 +19,8 @@ struct ContentView: View {
                     HStack{
                         NavigationLink(destination : SetCounter()) {
                             Text("Set Counter!")
-                                .font(Font.custom("Marker Felt", size: 25))
-                                .frame(width: 125, height: 80)
-                                .background(Color.gray)
-                                .foregroundColor(Color.black)
-                                .cornerRadius(15)
-                        }
-                        NavigationLink(destination : StopWatch()) {
-                            Text("Stopwatch!")
-                                .font(Font.custom("Marker Felt", size: 25))
-                                .frame(width: 125, height: 80, alignment: .center)
+                                .font(Font.custom("Marker Felt", size: 50))
+                                .frame(width: 300, height: 75)
                                 .background(Color.gray)
                                 .foregroundColor(Color.black)
                                 .cornerRadius(15)
