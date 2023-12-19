@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var Sets = 0
+    @State var Reps = 0
     var body: some View {
         NavigationView {
             ZStack {
@@ -16,6 +18,8 @@ struct ContentView: View {
                     Text("Max Reps")
                         .font(Font.custom("Marker Felt", size: 45))
                     Spacer()
+                    Image("Barbell")
+                        Spacer()
                     HStack{
                         NavigationLink(destination : SetCounter()) {
                             Text("Set Counter!")

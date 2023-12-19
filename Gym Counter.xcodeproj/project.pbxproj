@@ -12,6 +12,7 @@
 		EAA4A8A02B20CBEA00CBD04D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAA4A89F2B20CBEA00CBD04D /* Assets.xcassets */; };
 		EAA4A8A32B20CBEA00CBD04D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAA4A8A22B20CBEA00CBD04D /* Preview Assets.xcassets */; };
 		EAA4A8AA2B20D19700CBD04D /* SetCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA4A8A92B20D19700CBD04D /* SetCounter.swift */; };
+		EAA4A8B12B31571300CBD04D /* weights.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EAA4A8B02B31571300CBD04D /* weights.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		EAA4A89F2B20CBEA00CBD04D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAA4A8A22B20CBEA00CBD04D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EAA4A8A92B20D19700CBD04D /* SetCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCounter.swift; sourceTree = "<group>"; };
+		EAA4A8B02B31571300CBD04D /* weights.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = weights.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 		EAA4A89A2B20CBE900CBD04D /* Gym Counter */ = {
 			isa = PBXGroup;
 			children = (
+				EAA4A8AF2B31571300CBD04D /* Sound */,
 				EAA4A89B2B20CBE900CBD04D /* Gym_CounterApp.swift */,
 				EAA4A89D2B20CBE900CBD04D /* ContentView.swift */,
 				EAA4A8A92B20D19700CBD04D /* SetCounter.swift */,
@@ -69,6 +72,14 @@
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
+		};
+		EAA4A8AF2B31571300CBD04D /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				EAA4A8B02B31571300CBD04D /* weights.mp3 */,
+			);
+			path = Sound;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -130,6 +141,7 @@
 			files = (
 				EAA4A8A32B20CBEA00CBD04D /* Preview Assets.xcassets in Resources */,
 				EAA4A8A02B20CBEA00CBD04D /* Assets.xcassets in Resources */,
+				EAA4A8B12B31571300CBD04D /* weights.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
