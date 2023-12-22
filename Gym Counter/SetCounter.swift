@@ -13,13 +13,15 @@ struct SetCounter: View {
     @State var Reps = 0
     var body: some View {
         NavigationView {
+            //Color for backround
             ZStack {
                 Color.red.opacity(1.0).ignoresSafeArea()
                 VStack {
+                    //Number of Sets
                     Text("Sets: \(Sets)")
                         .font(Font.custom("Marker Felt", size: 50))
                     HStack{
-                        
+                        //Sets add button
                         Button(action: {
                             Sets += 1
                         }) {
@@ -33,7 +35,7 @@ struct SetCounter: View {
                                 .foregroundColor(.black)
                         }
                         
-                        
+                        //Sets subtract button
                         Button(action: {
                             Sets -= 1
                         }) {
@@ -49,6 +51,7 @@ struct SetCounter: View {
                             
                         }
                     }
+                    //Reset Sets Button
                     Button("Reset Sets") {
                         Sets = 0
                     }
@@ -65,6 +68,7 @@ struct SetCounter: View {
                     Spacer()
                     
                     HStack {
+                       //Add Reps
                         Button(action: {
                             Reps += 1
                         }) {
@@ -78,7 +82,7 @@ struct SetCounter: View {
                                 .foregroundColor(.black)
                         }
                         
-                        
+                        //Subtract Reps
                         Button(action: {
                             Reps -= 1
                         }) {
@@ -92,6 +96,7 @@ struct SetCounter: View {
                                 .foregroundColor(.black)
                         }
                     }
+                    //Reset Reps
                     Button("Reset Reps") {
                         Reps = 0
                     }
@@ -103,10 +108,10 @@ struct SetCounter: View {
                     .cornerRadius(10)
                     .foregroundColor(.black)
                     Spacer()
-                    
-                    NavigationLink("Workout Done", destination : ContentView())
-                        .onTapGesture {
-                            SoundManager.instance.playSound()
+                    //Workout Done Button
+                   Button("Workout Done") {
+                            //Plays weight dropping sound
+                       SoundManager.instance.playSound()
                             Reps = 0
                             Sets = 0
                         }
@@ -129,11 +134,12 @@ struct SetCounter: View {
             SetCounter()
         }
     }
-    
+    //Sound manager that helps run barbell sound
     class SoundManager {
         static let instance = SoundManager()
         var player: AVAudioPlayer?
         func playSound() {
+            //Destination of Weight Sound
             guard let url = Bundle.main.url(forResource: "weights", withExtension: ".mp3") else {return}
             
             do {

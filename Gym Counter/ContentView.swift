@@ -12,12 +12,15 @@ struct ContentView: View {
     @State var Reps = 0
     var body: some View {
         NavigationView {
+           //Make Area Red
             ZStack {
                 Color.red.opacity(1.0).ignoresSafeArea()
+                //Name Of App
                 VStack {
                     Text("Max Reps")
                         .font(Font.custom("Marker Felt", size: 45))
                     Spacer()
+                    //Logo Image
                     Image("Barbell")
                         Spacer()
                     HStack{
